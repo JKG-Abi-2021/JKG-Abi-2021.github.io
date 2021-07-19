@@ -1,15 +1,89 @@
+body,html{
+  height: 99%;
+  font-family: 'Roboto', sans-serif;
+}
+
 * {
-    font-family: 'Roboto', sans-serif;
-  }
+  box-sizing: border-box;
   
-  body {
-    margin: auto;
-    width: 50%;
-    background-color: rgba(10, 10, 10, 0.932);
-    color: white;
-  }
   
-  h1 {
-    font-size: 3vh;
-    font-family: "Times New Roman", Times, serif;
+}
+
+.big{
+  text-align: center;
+  
+  font-size: xx-large;
+}
+
+
+body {
+background-color: black;
+  
+
   }
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.center{
+padding: 0;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+height: 100vh;
+position: relative;
+}
+
+.vertical-center {
+margin: 0;
+position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+.bg-image{
+  /* The image used */
+  background-image: url("../assets/Klassenfoto.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgba(0, 0, 0, 0.459);
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.under {
+  text-decoration: underline;
+}
